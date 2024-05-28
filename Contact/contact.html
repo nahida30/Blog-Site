@@ -52,9 +52,21 @@
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <button class="bg-emerald-500 text-white px-5 py-2 rounded-full hover:bg-emerald-800">Sign in</button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer hidden"></ion-icon>
-            </div>
+                <!-- Open the modal using ID.showModal() method -->
+ <button class="w-10" onclick="my_modal_1.showModal()">⌕</button>
+ <dialog id="my_modal_1" class="modal">
+   <div class="modal-box">
+     <input type="text" class="w-[100%]" placeholder="Search">
+     <div class="modal-action">
+       <form method="dialog">
+         <!-- if there is a button in form, it will close the modal -->
+         <button class="btn">Close</button>
+       </form>
+     </div>
+   </div>
+ </dialog>
+                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer hidden"></ion-icon>
+             </div>
     </header>
 
   <hr>

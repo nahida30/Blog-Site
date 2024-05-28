@@ -21,6 +21,49 @@
      <link rel="icon" type="image/x-icon" href="/images/favIcon.png">
 </head>
 <body>
+     <!-- navbar  -->
+     <header class="bg-white ">
+        <nav class="flex justify-between items-center w-[78.5%]  mx-auto ">
+            <div>
+               <a href="navbar.html"> <img class="w-32 cursor-pointer p-2" src="./images/logo.png" alt="..."></a>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-emerald-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-emerald-500" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-emerald-500" href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-emerald-500" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+               <!-- Open the modal using ID.showModal() method -->
+<button class="w-10" onclick="my_modal_1.showModal()">⌕</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <input type="text" class="w-[100%]" placeholder="Search">
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer hidden"></ion-icon>
+            </div>
+    </header>
+
+  <hr>
     
 </body>
 </html>

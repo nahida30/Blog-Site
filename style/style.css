@@ -1,0 +1,25 @@
+.image {
+	display: inline-block;
+	text-align:center;
+
+	float: left;
+}
+figure {
+	overflow: hidden;
+	margin: 0 10px;
+}
+
+.image img {
+	display: block;
+	
+	cursor: pointer;
+}
+.image #zoom-In figure img {
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+.image #zoom-In figure:hover img {
+	transform: scale(1.1);
+}
+
+
